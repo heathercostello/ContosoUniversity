@@ -3,28 +3,45 @@
 @{
     ViewData["Title"] = "Student Body Statistics";
 }
+    <div class="aboutBody">
+        <h2>Contoso University</h2>
+        <p>
+            We want every student to excel here at Contoso Universty. We keep high standards and are proud of our 95% graduation rate, with 80% of those earning a GPA of 3.7 or higher.
+            We take pride in every single student and will hold them to the standards here at Contoso. We believe in hard work, determination,
+            preparing, and acheiving. Every student who graduates from Contoso University is ready for the work force, and 78% of our graduating
+            students have jobs lined up for them right after they graduate.
+        </p>
 
-<h2>Student Body Statistics</h2>
 
-<table>
-    <tr>
-        <th>
-            Enrollment Date
-        </th>
-        <th>
-            Students
-        </th>
-    </tr>
+        <h3>Student Body Statistics</h3>
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.EnrollmentDate)
-            </td>
-            <td>
-                @item.StudentCount
-            </td>
-        </tr>
-    }
-</table>
+        <table>
+            <tr class="aboutRow">
+                <th>
+                    Enrollment <br />Date
+                </th>
+                <th class="aboutRow">
+                    Students
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr class="aboutRow">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EnrollmentDate)
+                    </td>
+                    <td>
+                        @item.StudentCount
+                    </td>
+                </tr>
+            }
+        </table>
+
+        <br />
+        <p>
+            For any questions about this website please contact Heather Costello<br />
+            Email: heathercostello@byui.edu
+        </p>
+
+    </div>
