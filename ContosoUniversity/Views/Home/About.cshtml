@@ -12,32 +12,32 @@
             students have jobs lined up for them right after they graduate.
         </p>
 
+        <div class="aboutCenterTable">
+            <h3>Student Body Statistics</h3>
 
-        <h3>Student Body Statistics</h3>
-
-        <table>
-            <tr class="aboutRow">
-                <th>
-                    Enrollment <br />Date
-                </th>
-                <th class="aboutRow">
-                    Students
-                </th>
-            </tr>
-
-            @foreach (var item in Model)
-            {
+            <table class="tablecenter">
                 <tr class="aboutRow">
-                    <td>
-                        @Html.DisplayFor(modelItem => item.EnrollmentDate)
-                    </td>
-                    <td>
-                        @item.StudentCount
-                    </td>
+                    <th>
+                        Enrollment <br />Date
+                    </th>
+                    <th class="aboutRow">
+                        Students
+                    </th>
                 </tr>
-            }
-        </table>
 
+                @foreach (var item in Model)
+                {
+                    <tr class="aboutRow">
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EnrollmentDate)
+                        </td>
+                        <td>
+                            @item.StudentCount
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
         <br />
         <p>
             For any questions about this website please contact Heather Costello<br />

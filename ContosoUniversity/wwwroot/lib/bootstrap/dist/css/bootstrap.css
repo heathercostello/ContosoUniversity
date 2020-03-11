@@ -1606,15 +1606,19 @@ pre code {
   }
 }
 @media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
+    .container {
+        width: 1170px;
+    }
+}
+
+.footer-centered{
+    text-align: center;
 }
 .container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .row {
   margin-right: -15px;
@@ -5084,8 +5088,13 @@ a.badge:focus {
 .jumbotron .container {
   max-width: 100%;
 }
+
+.tablecenter{
+    align-content: center;
+    text-align: center;
+}
 @media screen and (min-width: 768px) {
-  .jumbotron {
+    .jumbotron {
     padding-top: 48px;
     padding-bottom: 48px;
   }
@@ -5094,23 +5103,29 @@ a.badge:focus {
     padding-right: 60px;
     padding-left: 60px;
   }
-  .jumbotron h1,
-  .jumbotron .h1 {
-    font-size: 63px;
+    .jumbotron h1,
+    .jumbotron .h1 {
+        font-size: 63px;
+        text-align: center;
+        font-family: Montserrat;
+    }
+}
+.aboutCenterTable{
     text-align: center;
-  }
+    align-content: center;
+    align-items: center;
 }
 .thumbnail {
-  display: block;
-  padding: 4px;
-  margin-bottom: 20px;
-  line-height: 1.42857143;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  -webkit-transition: border 0.2s ease-in-out;
-  -o-transition: border 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out;
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border 0.2s ease-in-out;
+    -o-transition: border 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out;
 }
 .thumbnail > img,
 .thumbnail a > img {
